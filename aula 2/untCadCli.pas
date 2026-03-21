@@ -1,0 +1,38 @@
+unit untCadCli;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmCadCli = class(TForm)
+    edtNome: TEdit;
+    lblNome: TLabel;
+    btnSalvar: TButton;
+    lblCadSucess: TLabel;
+    procedure btnSalvarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadCli: TfrmCadCli;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCadCli.btnSalvarClick(Sender: TObject);
+begin
+
+ lblCadSucess.Visible := True;
+
+
+
+end;
+
+end.

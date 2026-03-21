@@ -1,0 +1,27 @@
+unit untCadCli;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmCadCli = class(TForm)
+    edtNome: TEdit;
+    lblNome: TLabel;
+    btnSalvar: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCadCli: TfrmCadCli;
+
+implementation
+
+{$R *.dfm}
+
+end.

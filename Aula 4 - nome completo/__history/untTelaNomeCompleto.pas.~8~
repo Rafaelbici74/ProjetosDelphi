@@ -1,0 +1,58 @@
+unit untTelaNomeCompleto;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TForm2 = class(TForm)
+    btnNomeCompleto: TButton;
+    lblSobrenome: TLabel;
+    lblNome: TLabel;
+    lblNomeCompleto: TLabel;
+    edtSobrenome: TEdit;
+    edtNome: TEdit;
+    btnLimpar: TButton;
+    procedure btnNomeCompletoClick(Sender: TObject);
+    procedure btnLimparClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+
+implementation
+
+{$R *.dfm}
+
+
+
+procedure TForm2.btnLimparClick(Sender: TObject);
+begin
+
+lblNomecompleto.caption := '';
+edtSobrenome.text := '';
+edtNome.text := 'Nome Completo';
+
+
+end;
+
+procedure TForm2.btnNomeCompletoClick(Sender: TObject);
+begin
+
+lblnomecompleto.Caption := edtNome.Text + ' ' +edtSobrenome.Text;
+
+
+
+//if edtNome.Text and edtSobrenome.Text <> '' then
+//
+//     lblNomeCompleto.Caption := edtNome.text + ' ' + edtSobrenome.text
+
+end;
+
+end.

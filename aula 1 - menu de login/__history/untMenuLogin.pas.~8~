@@ -1,0 +1,38 @@
+unit untMenuLogin;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmMenuCad = class(TForm)
+    btnSendLog: TButton;
+    edtUsername: TEdit;
+    edtPassword: TEdit;
+    lblSubInfo: TLabel;
+    procedure lblSubInfoClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmMenuCad: TfrmMenuCad;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmMenuCad.lblSubInfoClick(Sender: TObject);
+begin
+
+  lblSubInfo.Transparent := false;
+
+  lblSubInfo.color := clPurple;
+
+end;
+
+end.
