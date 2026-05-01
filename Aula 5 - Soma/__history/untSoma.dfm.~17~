@@ -1,0 +1,189 @@
+object frmSoma: TfrmSoma
+  Left = 0
+  Top = 0
+  Caption = 'frmSoma'
+  ClientHeight = 240
+  ClientWidth = 647
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object lbln1: TLabel
+    Left = 18
+    Top = 61
+    Width = 76
+    Height = 21
+    Caption = 'Numero 1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lbln2: TLabel
+    Left = 184
+    Top = 61
+    Width = 76
+    Height = 21
+    Caption = 'Numero 2'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblTotal: TLabel
+    Left = 375
+    Top = 69
+    Width = 31
+    Height = 17
+    Caption = 'Total'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblMedia: TLabel
+    Left = 375
+    Top = 71
+    Width = 3
+    Height = 15
+  end
+  object edtn1: TEdit
+    Left = 18
+    Top = 88
+    Width = 137
+    Height = 33
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI Semibold'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+  end
+  object edtn2: TEdit
+    Left = 184
+    Top = 88
+    Width = 137
+    Height = 33
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI Semibold'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+  end
+  object edtTotal: TEdit
+    Left = 375
+    Top = 88
+    Width = 138
+    Height = 33
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI Semibold'
+    Font.Style = [fsBold]
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object btnSoma: TButton
+    Left = 327
+    Top = 71
+    Width = 42
+    Height = 25
+    Caption = '+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -24
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btnSomaClick
+  end
+  object btnDiv: TButton
+    Left = 327
+    Top = 118
+    Width = 42
+    Height = 27
+    Caption = '/'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 4
+    OnClick = btnDivClick
+  end
+  object btnVezes: TButton
+    Left = 327
+    Top = 160
+    Width = 42
+    Height = 25
+    Caption = '*'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 5
+    OnClick = btnVezesClick
+  end
+  object btnSub: TButton
+    Left = 327
+    Top = 31
+    Width = 42
+    Height = 25
+    Caption = '-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 6
+    OnClick = btnSubClick
+  end
+  object btnMod: TButton
+    Left = 246
+    Top = 193
+    Width = 75
+    Height = 25
+    Caption = 'Mod'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 7
+    OnClick = btnModClick
+  end
+  object Button2: TButton
+    Left = 246
+    Top = 162
+    Width = 75
+    Height = 25
+    Caption = 'Div'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 8
+    OnClick = Button2Click
+  end
+end

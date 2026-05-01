@@ -1,0 +1,74 @@
+unit untSoma;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmSoma = class(TForm)
+    edtn1: TEdit;
+    edtn2: TEdit;
+    edtTotal: TEdit;
+    lbln1: TLabel;
+    lbln2: TLabel;
+    lblTotal: TLabel;
+    btnSoma: TButton;
+    btnDiv: TButton;
+    lblMedia: TLabel;
+    lblFor: TLabel;
+    procedure btnSomaClick(Sender: TObject);
+    procedure btnDivClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmSoma: TfrmSoma;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmSoma.btnDivClick(Sender: TObject);
+
+var
+  div1: double;
+  div2: double;
+  total: string;
+
+begin
+
+  div1 := (strtofloat(edtn1.text));
+  div2 := (strtofloat(edtn2.text));
+  total := floattostr((div1+ div2) / 2);
+
+  edttotal.text := (total);
+
+  lblTotal.Hide;
+  lblMedia.Caption := 'A media dos numeros digitados é';
+
+end;
+
+procedure TfrmSoma.btnSomaClick(Sender: TObject);
+var
+
+ n1 : integer;
+ n2 : integer;
+ total : string;
+
+begin
+
+ n1 := (strtoint(edtn1.text));
+ n2 := (strtoint(edtn2.text));
+ total := inttostr(n1+n2);
+
+edtTotal.text := (total);
+lblTotal.Caption := 'A soma dos numeros digitados é';
+
+end;
+
+end.

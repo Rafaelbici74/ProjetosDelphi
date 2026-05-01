@@ -1,0 +1,62 @@
+unit untSalario;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmSalario = class(TForm)
+    edtValueHoras: TEdit;
+    btnEnviar: TButton;
+    lblHoras: TLabel;
+    lblSalario: TLabel;
+    lblValueSalario: TLabel;
+    lblMedia: TLabel;
+    lblValorHora: TLabel;
+    edtValueHora: TEdit;
+    procedure btnEnviarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmSalario: TfrmSalario;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmSalario.btnEnviarClick(Sender: TObject);
+var
+  SValor : integer;
+  SValorTotal : integer;
+  i : integer;
+  SMedia : double;
+
+begin
+  Svalor := 0;
+  SValorTotal := 0;
+  SMedia := svalortotal / 30;
+
+  for i := 2 to 30 do
+
+  begin
+
+      lblHoras.Caption := 'Quantas horas você trabalhou no dia ' + IntToStr(i);
+      SValor := strtoint(edtValueHoras.text);
+
+      SValorTotal := SValorTotal + SValor;
+
+  end;
+
+  lblValueSalario.Caption := inttostr(SValorTotal);
+
+  lblMedia.Caption := floattostr(SMedia);
+
+end;
+
+end.

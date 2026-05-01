@@ -1,0 +1,40 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmExe26 = class(TForm)
+    edtIdade: TEdit;
+    edtNome: TEdit;
+    lblNome: TLabel;
+    lblIdade: TLabel;
+    btnExibe: TButton;
+    lblResul: TLabel;
+    procedure btnExibeClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmExe26: TfrmExe26;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmExe26.btnExibeClick(Sender: TObject);
+begin
+
+  lblResul := edtNome.text + 'daqui a 28 anos você vai ter ' + edtIdade.text + ' anos!';
+
+
+
+end;
+
+end.
