@@ -2,8 +2,8 @@ object frmIdade: TfrmIdade
   Left = 0
   Top = 0
   Caption = 'frmIdade'
-  ClientHeight = 98
-  ClientWidth = 309
+  ClientHeight = 220
+  ClientWidth = 405
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

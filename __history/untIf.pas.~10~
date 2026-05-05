@@ -37,12 +37,7 @@ begin
 
   if idade < 18 then
   begin
-    ShowMessage('Você é menor de idade!');
-  end
-
-  else
-  begin
-    ShowMessage('Você é maior de idade!');
+    ShowMessage('Você é menor de 18 anos!');
   end;
 
     ShowMessage('Olá, ' + nome + #13 + 'Sua idade é: '+ inttostr(idade) + ' anos.');
