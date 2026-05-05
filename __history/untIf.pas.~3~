@@ -1,0 +1,46 @@
+unit untIf;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmIdade = class(TForm)
+    btnVerificar: TButton;
+    edtNome: TEdit;
+    edtIdade: TEdit;
+    lblResul: TLabel;
+    procedure btnVerificarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmIdade: TfrmIdade;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmIdade.btnVerificarClick(Sender: TObject);
+var
+  nome: string;
+  idade: integer;
+begin
+  nome := edtNome.Text;
+  idade := strtoint(edtIdade.Text);
+
+  if idade < 18 then
+  begin
+    lblResul.Caption := 'Você é menor de 18 anos!'
+  end;
+
+  //idade := inttostr(edtIdade.Text);
+  lblResul.Caption :=  nome + ', você tem ' + idade + ' anos de idade.';
+
+end;
+end.
