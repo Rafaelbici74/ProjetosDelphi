@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2026/05/04 21:39:09.911,=\\srv-arq-0\usuarios\rafael.reyes\Meus Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2026/05/04 21:51:46.930,Z:\DESENVOLVIMENTO\projetos\ProjetosDelphi\untIf.dfm=\\srv-arq-0\usuarios\rafael.reyes\Meus Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2026/05/04 21:51:46.930,Z:\DESENVOLVIMENTO\projetos\ProjetosDelphi\untIf.pas=\\srv-arq-0\usuarios\rafael.reyes\Meus Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2026/05/04 21:51:52.377,Z:\DESENVOLVIMENTO\projetos\ProjetosDelphi\prjIf.dproj=\\srv-arq-0\usuarios\rafael.reyes\Meus Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+	<Transactions>
+    <Transaction>2026/05/04 21:39:09.000.911,=\\srv-arq-0\usuarios\rafael.reyes\Meus Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/05/04 21:51:46.000.930,\\srv-arq-0\usuarios\rafael.reyes\Meus Documentos\Embarcadero\Studio\Projects\Unit1.pas=Z:\DESENVOLVIMENTO\projetos\ProjetosDelphi\untIf.pas</Transaction>
+    <Transaction>2026/05/04 21:51:46.000.930,\\srv-arq-0\usuarios\rafael.reyes\Meus Documentos\Embarcadero\Studio\Projects\Unit1.dfm=Z:\DESENVOLVIMENTO\projetos\ProjetosDelphi\untIf.dfm</Transaction>
+    <Transaction>2026/05/04 21:51:52.000.377,\\srv-arq-0\usuarios\rafael.reyes\Meus Documentos\Embarcadero\Studio\Projects\Project1.dproj=Z:\DESENVOLVIMENTO\projetos\ProjetosDelphi\prjIf.dproj</Transaction>
   </Transactions>
 </BorlandProject>
