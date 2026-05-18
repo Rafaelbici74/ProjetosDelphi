@@ -1,0 +1,33 @@
+unit untPromocao;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmPromocao = class(TForm)
+    lblNome: TLabel;
+    lblSalario: TLabel;
+    lblTempo: TLabel;
+    lblReclamacao: TLabel;
+    btnVerify: TButton;
+    edtNome: TEdit;
+    edtSalario: TEdit;
+    edtTempo: TEdit;
+    edtReclamacao: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPromocao: TfrmPromocao;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,102 @@
+unit untPromocao;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
+
+type
+  TfrmPromocao = class(TForm)
+    lblNome: TLabel;
+    lblSalario: TLabel;
+    lblTempo: TLabel;
+    lblReclama: TLabel;
+    btnVerify: TButton;
+    edtNome: TEdit;
+    edtSalario: TEdit;
+    edtTempo: TEdit;
+    edtReclama: TEdit;
+    procedure btnVerifyClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPromocao: TfrmPromocao;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPromocao.btnVerifyClick(Sender: TObject);
+var
+  nome: string;
+  salario: real;
+  tempServ: integer;
+  reclamacao: boolean;
+
+begin
+
+  nome := edtNome.Text;
+  salario := strtofloat(edtSalario.Text);
+  tempServ := strtoint(edtTempo.Text);
+
+  // Verificação de reclamação
+  if edtReclama.text = 'Sim' then
+    begin
+      reclamacao := true;
+    end
+  else if edtReclama.text = 'Não' then
+    begin
+       reclamacao := false;
+    end
+  Else
+    begin
+      reclamacao := true
+    end;
+
+
+    // Verificação de edit's vazias
+    if nome = '' then
+      begin
+        ShowMessage('Nome invalido ou vazio.');
+      end
+
+    else if salario = null then
+      begin
+        ShowMessage('Salario invalido ou vazio.');
+      end
+
+    else
+      begin
+         ShowMessage('Tempo de serviço invalido ou vazio');
+      end;
+
+
+    if salario > 1000 then
+      begin
+        if tempServ < 10 then
+          begin
+            ShowMessage('Você não foi promovido.')
+          end
+        else if reclamacao = true then
+          begin
+             ShowMessage('Você não foi promovido.')
+          end
+        else
+          begin
+            ShowMessage('Olá ' + nome + ', você foi promotivo!')
+          end;
+      end
+
+
+    else
+      begin
+        ShowMessage('Você não foi promovido.')
+      end;
+
+end;
+end.

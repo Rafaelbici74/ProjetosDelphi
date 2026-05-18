@@ -1,0 +1,127 @@
+object frmPromocao: TfrmPromocao
+  Left = 0
+  Top = 0
+  Caption = 'Verificar Promo'#231#227'o de Cargo'
+  ClientHeight = 255
+  ClientWidth = 624
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object lblNome: TLabel
+    Left = 8
+    Top = 24
+    Width = 54
+    Height = 25
+    Caption = 'Nome'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblSalario: TLabel
+    Left = 8
+    Top = 72
+    Width = 61
+    Height = 25
+    Caption = 'Sal'#225'rio'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblTempo: TLabel
+    Left = 8
+    Top = 120
+    Width = 155
+    Height = 25
+    Caption = 'Tempo de servi'#231'o'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object lblReclama: TLabel
+    Left = 8
+    Top = 168
+    Width = 112
+    Height = 25
+    Caption = 'Reclama'#231#245'es'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object btnVerify: TButton
+    Left = 8
+    Top = 208
+    Width = 601
+    Height = 33
+    Caption = 'Verificar Promo'#231#227'o'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnVerifyClick
+  end
+  object edtNome: TEdit
+    Left = 68
+    Top = 10
+    Width = 538
+    Height = 39
+    TabOrder = 1
+  end
+  object edtTempo: TEdit
+    Left = 176
+    Top = 103
+    Width = 433
+    Height = 45
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+  object edtSalario: TEdit
+    Left = 77
+    Top = 55
+    Width = 532
+    Height = 42
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+  end
+  object edtReclama: TEdit
+    Left = 136
+    Top = 154
+    Width = 473
+    Height = 39
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+  end
+end
